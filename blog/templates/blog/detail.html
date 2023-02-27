@@ -22,11 +22,11 @@
                             <form method="post" class="mb-6">
                                 {% csrf_token %}
 
-                                {{ form.as_p}}
+                                {{ form.as_p }}
 
                                 <div class="field">
                                     <div class="control">
-                                        <button class="button is-success">Submit</button>
+                                        <button class="button is-success">Submit comment</button>
                                     </div>
                                 </div>
                             </form>
@@ -38,7 +38,6 @@
                                     {{ comment.body }}
                                 </div>
                             </article>
-
                             {% endfor %}
                         </div>
                     </div>
